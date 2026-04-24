@@ -25,6 +25,7 @@ const categories = [
     ),
     items: [
       "Databricks",
+      "Microsoft Fabric",
       "Delta Lake",
       "Unity Catalog",
       "Apache Spark",

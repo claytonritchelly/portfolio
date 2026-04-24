@@ -356,7 +356,7 @@ function DesktopFlow({ inView }: { inView: boolean }) {
 
                 {/* Output targets */}
                 <div className="flex justify-center gap-3 pt-1">
-                  {["Power BI", "FastAPI", "RAG / AI"].map((label, i) => (
+                  {["Power BI", "Fabric", "FastAPI", "RAG / AI"].map((label, i) => (
                     <motion.span
                       key={label}
                       initial={{ opacity: 0, scale: 0.8 }}
@@ -471,7 +471,7 @@ function DesktopFlow({ inView }: { inView: boolean }) {
           { label: "Armazenamento", sub: "Delta Lake, Schema-on-read" },
           { label: "Transformação", sub: "PySpark, dbt, Quality" },
           { label: "Agregação", sub: "KPIs, Dims, Facts" },
-          { label: "Consumo", sub: "BI, APIs, AI, RAG" },
+          { label: "Consumo", sub: "BI, Fabric, APIs, AI, RAG" },
         ].map((item) => (
           <div key={item.label} className="text-center">
             <p className="font-mono text-[10px] text-foreground/70 font-medium">{item.label}</p>

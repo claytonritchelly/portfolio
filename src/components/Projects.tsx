@@ -16,7 +16,7 @@ const projects = [
       "Unity Catalog Governance: padronização de permissões, auditoria de grupos e migração via AD",
       "Pipelines de Resseguro: ingestão e transformação Bronze → Silver com pipeline GitLab CI/CD",
     ],
-    tags: ["Databricks", "FastAPI", "Unity Catalog", "Azure", "GitLab CI/CD", "Delta Lake"],
+    tags: ["Databricks", "Microsoft Fabric", "FastAPI", "Unity Catalog", "Azure", "GitLab CI/CD", "Delta Lake"],
   },
   {
     emoji: "🏛️",
@@ -44,7 +44,7 @@ const projects = [
       "Orquestração de pipelines com Data Factory, Apache Airflow e transformações em PySpark",
       "Criação de governança, catálogo de dados e padrões de qualidade desde o dia zero",
     ],
-    tags: ["Azure Data Lake", "Databricks", "Delta Lake", "Airflow", "Data Factory", "PySpark", "Medallion"],
+    tags: ["Azure Data Lake", "Databricks", "Microsoft Fabric", "Delta Lake", "Airflow", "Data Factory", "PySpark", "Medallion"],
   },
   {
     emoji: "🔁",
@@ -72,7 +72,7 @@ const projects = [
       "Validação e reconciliação de tabelas Gold críticas de autorização médica",
       "Transição executada sem downtime para os sistemas de atendimento ao paciente",
     ],
-    tags: ["OCI", "Azure", "Databricks", "Migração Cloud", "Arquitetura", "Saúde"],
+    tags: ["OCI", "Azure", "Databricks", "Microsoft Fabric", "Migração Cloud", "Arquitetura", "Saúde"],
   },
   {
     emoji: "⏱️",

@@ -95,7 +95,7 @@ export default function Hero() {
           </span>
           , com arquitetura medallion, pipelines em{" "}
           <span className="text-foreground font-medium">
-            Spark, dbt e Apache Hop
+            Databricks, Microsoft Fabric, Spark, dbt e Apache Hop
           </span>
           , governança, exposição via APIs e projetos de{" "}
           <span className="text-foreground font-medium">

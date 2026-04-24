@@ -26,7 +26,7 @@ export default function About() {
               Ao longo da carreira, construí plataformas de dados end-to-end em ambientes{" "}
               <span className="text-foreground font-medium">multicloud (Azure, AWS e GCP)</span>,
               com pipelines em arquitetura medallion (Bronze &rarr; Silver &rarr; Gold) usando{" "}
-              <span className="text-foreground font-medium">Databricks, Apache Spark, dbt, Apache Hop e Apache Airflow</span>.
+              <span className="text-foreground font-medium">Databricks, Microsoft Fabric, Apache Spark, dbt, Apache Hop e Apache Airflow</span>.
               Implementei governança via Unity Catalog, exposição de dados com{" "}
               <span className="text-foreground font-medium">FastAPI</span> e, mais recentemente,
               projetos de{" "}
