@@ -20,40 +20,50 @@ export default function About() {
           {/* Text */}
           <motion.div {...card} className="space-y-5 text-muted text-[15px] leading-relaxed">
             <p>
-              Atuo como <span className="text-foreground font-medium">Arquiteto e Engenheiro de Dados</span>{" "}
-              com vivência em setores regulados e de alta criticidade — <span className="text-foreground font-medium">bancário,
-              resseguros, seguros, telecomunicações, governo, marketing e mídia digital</span>.
-              Desenho e operacionalizo plataformas analíticas corporativas em{" "}
-              <span className="text-foreground font-medium">Azure, AWS e GCP</span>, com foco em{" "}
-              <span className="text-foreground font-medium">Lakehouse, Databricks, Microsoft Fabric, Spark e arquitetura medallion</span>{" "}
-              (Bronze &rarr; Silver &rarr; Gold).
+              Sou <span className="text-foreground font-medium">Engenheiro de Dados Sênior</span> com forte
+              atuação em <span className="text-foreground font-medium">arquitetura de plataformas analíticas</span> — uma
+              evolução natural de quem coloca a mão no Spark, no Terraform e no Databricks todos os dias. Vivência em setores
+              regulados e de alta criticidade: <span className="text-foreground font-medium">bancário, resseguros, seguros,
+              telecomunicações, governo, marketing e mídia digital</span>.
             </p>
             <p>
-              Minha atuação vai além da operação: defino padrões de{" "}
+              No dia a dia, construo e operacionalizo pipelines em arquitetura medallion (Bronze &rarr; Silver &rarr; Gold) com{" "}
+              <span className="text-foreground font-medium">Databricks, Microsoft Fabric, Spark, dbt, Apache Hop e Apache Airflow</span>{" "}
+              em ambientes <span className="text-foreground font-medium">multicloud (Azure, AWS e GCP)</span> — escrevendo código,
+              otimizando jobs, modelando dados e entregando valor para áreas de negócio.
+            </p>
+            <p>
+              Como engenheiro com visão arquitetural, também desenho padrões de{" "}
               <span className="text-foreground font-medium">segurança, redes e governança</span>{" "}
-              (VNets, Private Endpoints, RBAC, Managed Identities, Key Vault, Entra ID), automatizo provisionamento via{" "}
-              <span className="text-foreground font-medium">IaC (Terraform e Bicep)</span> e implemento práticas de{" "}
+              (VNets, Private Endpoints, RBAC, Managed Identities, Key Vault, Entra ID), automatizo infraestrutura via{" "}
+              <span className="text-foreground font-medium">IaC (Terraform e Bicep)</span> e implemento{" "}
               <span className="text-foreground font-medium">FinOps, observabilidade e DR</span>{" "}
-              com Azure Monitor, Log Analytics e métricas de custo/performance — pensando arquitetura sob a ótica de escalabilidade,
-              resiliência e compliance enterprise.
+              com Azure Monitor e Log Analytics — sempre com a ótica de escalabilidade, performance e compliance enterprise.
             </p>
             <p>
-              Combino visão arquitetural com postura hands-on: do desenho de redes e identidade no Azure ao{" "}
-              <span className="text-foreground font-medium">deploy via Databricks Asset Bundles</span>, exposição segura de dados via{" "}
-              <span className="text-foreground font-medium">FastAPI + OAuth</span> e projetos de{" "}
-              <span className="text-foreground font-medium">IA Generativa, RAG e Agentes Inteligentes</span>{" "}
-              integrando LLMs a pipelines de dados para automação e tomada de decisão assistida.
+              Tenho prazer em código: do <span className="text-foreground font-medium">deploy via Databricks Asset Bundles</span>{" "}
+              à exposição segura de dados via <span className="text-foreground font-medium">FastAPI + OAuth</span>, passando por
+              projetos de <span className="text-foreground font-medium">IA Generativa, RAG e Agentes Inteligentes</span>{" "}
+              integrando LLMs a pipelines de dados para automação e decisão assistida.
             </p>
             <p>
               Minha relação com dados começou cedo, influenciada pelo meu pai, DBA de longa data — o que moldou
-              minha forma de pensar arquitetura, modelagem e qualidade desde o início. Já atuei como desenvolvedor
+              minha forma de pensar engenharia, arquitetura e qualidade desde o início. Já atuei como desenvolvedor
               Oracle, Engenheiro de Dados Sênior e <span className="text-foreground font-medium">professor de Engenharia de Dados</span>,
               somando experiência técnica e didática.
+            </p>
+            <p>
+              Além do trabalho, produzo conteúdo educacional sobre engenharia de dados no
+              YouTube (série &quot;Do Zero aos Dados&quot;), com foco em ajudar quem está
+              começando ou em transição para a área.
             </p>
 
             <div className="grid grid-cols-2 gap-3 pt-4">
               {[
+                "Engenharia de Pipelines (Spark, dbt, Hop)",
                 "Arquitetura Lakehouse / Medallion",
+                "Ingestão & CDC",
+                "APIs FastAPI + OAuth",
                 "Azure Networking & Security",
                 "Terraform & IaC",
                 "FinOps & Observabilidade",
@@ -61,6 +71,7 @@ export default function About() {
                 "IA Generativa, RAG & Agentes",
                 "Multicloud (Azure, AWS, GCP)",
                 "CI/CD para Dados & Infra",
+                "Modelagem & Qualidade de Dados",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2 text-sm">
                   <span className="text-accent-light text-xs">&#9670;</span>
