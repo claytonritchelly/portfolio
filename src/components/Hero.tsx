@@ -89,15 +89,15 @@ export default function Hero() {
           {...fade(0.7)}
           className="text-muted max-w-xl text-base md:text-lg leading-relaxed mb-10"
         >
-          Construo plataformas de dados end-to-end em{" "}
+          Desenho e implemento{" "}
           <span className="text-foreground font-medium">
-            ambientes multicloud
-          </span>
-          , com arquitetura medallion, pipelines em{" "}
+            arquiteturas de Data Platform &amp; Analytics
+          </span>{" "}
+          em ambientes multicloud — com foco em{" "}
           <span className="text-foreground font-medium">
-            Databricks, Microsoft Fabric, Spark, dbt e Apache Hop
+            Azure, Databricks, Microsoft Fabric, Lakehouse, IaC (Terraform), segurança, governança e FinOps
           </span>
-          , governança, exposição via APIs e projetos de{" "}
+          . Construo pipelines escaláveis, plataformas resilientes e projetos de{" "}
           <span className="text-foreground font-medium">
             IA Generativa, RAG e Agentes Inteligentes
           </span>
@@ -133,7 +133,7 @@ export default function Hero() {
         >
           <AnimatedCounter target={6} suffix="+" label="Anos de experiência" />
           <AnimatedCounter target={3} suffix="+" label="Clouds dominadas" />
-          <AnimatedCounter target={4} label="Certificações" />
+          <AnimatedCounter target={10} suffix="+" label="Plataformas arquitetadas" />
         </motion.div>
       </motion.div>
 

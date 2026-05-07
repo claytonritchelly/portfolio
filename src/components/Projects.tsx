@@ -6,17 +6,18 @@ import SectionHeading from "./SectionHeading";
 const projects = [
   {
     emoji: "🏢",
-    type: "Corporativo",
-    title: "Plataforma Corporativa de Dados",
+    type: "Arquitetura",
+    title: "Arquitetura de Plataforma Corporativa em Azure Databricks",
     description:
-      "Construção e manutenção de plataforma corporativa sobre Databricks/Azure no setor de resseguros.",
+      "Desenho e evolução de uma plataforma analítica corporativa em Azure Databricks no setor de resseguros — com foco em arquitetura de redes, identidade, governança e CI/CD.",
     highlights: [
-      "Table Factory: notebook PySpark com tabela de controle Delta que automatiza a criação de tabelas Gold em dev/prd",
-      "FastAPI Data Layer: camada de exposição autenticada via Azure Entra ID para times internos",
-      "Unity Catalog Governance: padronização de permissões, auditoria de grupos e migração via AD",
-      "Pipelines de Resseguro: ingestão e transformação Bronze → Silver com pipeline GitLab CI/CD",
+      "Definição de padrões de workspaces, clusters, networking (VNet Injection + Private Endpoints) e identidade (Entra ID, Managed Identity, Key Vault)",
+      "Table Factory: framework PySpark com tabela de controle Delta que automatiza criação de tabelas Gold em DEV/PRD",
+      "FastAPI Data Layer com OAuth/Entra ID para exposição segura de dados corporativos",
+      "Governança via Unity Catalog: RBAC, auditoria, padronização de permissões e segregação de ambientes",
+      "CI/CD com GitLab + Databricks Asset Bundles para promoção entre ambientes",
     ],
-    tags: ["Databricks", "Microsoft Fabric", "FastAPI", "Unity Catalog", "Azure", "GitLab CI/CD", "Delta Lake"],
+    tags: ["Databricks", "Microsoft Fabric", "Azure", "Unity Catalog", "Entra ID", "Private Endpoint", "DABs", "GitLab CI/CD", "FastAPI", "Delta Lake"],
   },
   {
     emoji: "🏛️",
@@ -34,17 +35,18 @@ const projects = [
   },
   {
     emoji: "🔄",
-    type: "Estruturação",
-    title: "Construção de Plataforma de Dados do Zero",
+    type: "Greenfield",
+    title: "Arquitetura Greenfield de Data Platform em Azure",
     description:
-      "Projeto greenfield de criação completa da plataforma de dados de uma empresa que não possuía área de dados estruturada — desde a definição da arquitetura até a entrega de dados prontos para consumo por áreas de negócio.",
+      "Projeto greenfield de desenho e construção completa da plataforma de dados de uma empresa que não tinha área de dados estruturada — da arquitetura de referência (redes, identidade, storage, compute) até a entrega de dados consumíveis pelas áreas de negócio.",
     highlights: [
-      "Desenho da arquitetura e migração de SQL Server, APIs REST e DW legado para Azure Data Lake",
-      "Implementação completa das camadas Bronze, Silver e Gold no Databricks com Delta Lake",
-      "Orquestração de pipelines com Data Factory, Apache Airflow e transformações em PySpark",
-      "Criação de governança, catálogo de dados e padrões de qualidade desde o dia zero",
+      "Arquitetura de referência: ADLS Gen2, Databricks, Data Factory, Entra ID, Key Vault, Private Endpoints e segregação por ambiente",
+      "Provisionamento automatizado via Terraform: workspaces, clusters, storage, redes e RBAC",
+      "Implementação completa do Lakehouse Bronze → Silver → Gold com Delta Lake",
+      "Orquestração híbrida com Data Factory + Airflow e transformações em PySpark",
+      "Governança, catálogo, qualidade e observabilidade definidos desde o dia zero",
     ],
-    tags: ["Azure Data Lake", "Databricks", "Microsoft Fabric", "Delta Lake", "Airflow", "Data Factory", "PySpark", "Medallion"],
+    tags: ["Azure", "ADLS Gen2", "Databricks", "Microsoft Fabric", "Terraform", "Data Factory", "Airflow", "Delta Lake", "Lakehouse"],
   },
   {
     emoji: "🔁",
@@ -63,16 +65,17 @@ const projects = [
   {
     emoji: "🏥",
     type: "Migração",
-    title: "Migração de Cloud — Setor de Saúde",
+    title: "Migração de Cloud OCI → Azure (Setor Regulado)",
     description:
-      "Liderança técnica na migração de toda a infraestrutura de dados de OCI para Azure em uma empresa do setor de saúde, garantindo continuidade operacional e zero perda de dados durante a transição.",
+      "Liderança técnica e arquitetural na migração de toda a infraestrutura de dados de OCI para Azure em uma empresa do setor de saúde — com requisitos de compliance, alta disponibilidade e zero perda de dados.",
     highlights: [
-      "Mapeamento sistêmico completo com diagramas de arquitetura as-is e to-be",
-      "Gap analysis detalhado entre ambientes DEV, HML e PRD para mitigar riscos",
+      "Diagramas de arquitetura as-is e to-be e roadmap de migração por ondas",
+      "Desenho de redes (VNet, Private Endpoints), identidade (Entra ID) e governança no destino",
+      "Gap analysis entre ambientes DEV, HML e PRD para mitigar riscos regulatórios",
       "Validação e reconciliação de tabelas Gold críticas de autorização médica",
-      "Transição executada sem downtime para os sistemas de atendimento ao paciente",
+      "Cutover executado sem downtime para os sistemas de atendimento ao paciente",
     ],
-    tags: ["OCI", "Azure", "Databricks", "Microsoft Fabric", "Migração Cloud", "Arquitetura", "Saúde"],
+    tags: ["Azure", "OCI", "Databricks", "Microsoft Fabric", "Private Endpoint", "Entra ID", "Migração Cloud", "Compliance", "Saúde"],
   },
   {
     emoji: "⏱️",
@@ -104,17 +107,18 @@ const projects = [
   },
   {
     emoji: "🛡️",
-    type: "Sustentação",
-    title: "Sustentação & Evolução de Plataforma Crítica",
+    type: "FinOps & SRE",
+    title: "FinOps, Observabilidade & Evolução de Plataforma Crítica",
     description:
-      "Responsável pela operação contínua e evolução de uma plataforma de dados de alta volumetria em produção, garantindo disponibilidade 24/7, SLAs rigorosos e redução consistente de custos operacionais.",
+      "Responsável pela operação contínua e evolução arquitetural de uma plataforma de dados de alta volumetria em produção — com SLAs rigorosos, observabilidade ponta-a-ponta e disciplina de FinOps.",
     highlights: [
-      "Implementação de observabilidade completa com CloudWatch, alertas e runbooks automatizados",
-      "Otimização de jobs Spark e queries que resultou em redução de 40% nos custos de infraestrutura",
-      "Gestão de incidentes críticos com RCA (Root Cause Analysis) e prevenção de reincidência",
-      "Expansão contínua: onboarding de novos domínios, fontes de dados e regras de negócio",
+      "Observabilidade end-to-end com Azure Monitor, Log Analytics e CloudWatch — métricas de custo, performance e SLA",
+      "Otimização de clusters Databricks, jobs Spark e queries com redução de 40% nos custos de infraestrutura",
+      "Gestão de incidentes críticos com RCA estruturado e prevenção de reincidência",
+      "Troubleshooting em rede, identidade, performance e escalabilidade em ambientes enterprise",
+      "Expansão contínua: onboarding de novos domínios, fontes e regras de negócio",
     ],
-    tags: ["Spark", "AWS", "CloudWatch", "Kafka", "Python", "Observabilidade"],
+    tags: ["Azure Monitor", "Databricks", "Spark", "FinOps", "Observabilidade", "Kafka", "AWS CloudWatch"],
   },
 ];
 
@@ -122,7 +126,7 @@ export default function Projects() {
   return (
     <section id="projetos" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <SectionHeading number="03." title="Projetos em Destaque" />
+        <SectionHeading number="03." title="Arquitetura & Projetos em Destaque" />
 
         <div className="grid md:grid-cols-2 gap-5">
           {projects.map((p, i) => (

@@ -4,10 +4,10 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 const roles = [
-  "Data Engineer",
-  "Medallion Architect",
-  "Pipeline Builder",
-  "Cloud Specialist",
+  "Data Architect",
+  "Lakehouse Architect",
+  "Azure Platform Specialist",
+  "Cloud & FinOps Engineer",
   "RAG & AI Engineer",
 ];
 

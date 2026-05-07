@@ -45,6 +45,11 @@ const categories = [
     ),
     items: [
       "Azure (App Service, Entra ID, DevOps)",
+      "Azure Networking (VNet, Private Endpoint, NSG, DNS)",
+      "ADLS Gen2 / Data Lake",
+      "Key Vault, Managed Identity, RBAC",
+      "Azure Monitor & Log Analytics",
+      "Data Factory, Synapse, Event Hub",
       "GCP (Dataproc, BigQuery)",
       "AWS (Glue, Step Functions, S3, Redshift, Athena)",
       "OCI",
@@ -69,6 +74,24 @@ const categories = [
     ],
   },
   {
+    title: "Arquitetura & IaC",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+    ),
+    items: [
+      "Terraform",
+      "Bicep",
+      "Lakehouse Architecture",
+      "Networking & Security Design",
+      "FinOps (Cost & Performance)",
+      "Observabilidade & DR",
+      "Padrões Enterprise & Compliance",
+    ],
+  },
+  {
     title: "Integração & CI/CD",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
@@ -81,6 +104,7 @@ const categories = [
       "Azure DevOps",
       "GitHub Actions",
       "Databricks Asset Bundles",
+      "Terraform Pipelines",
       "JDBC",
       "CDC",
       "Jenkins",
@@ -97,6 +121,7 @@ const categories = [
     ),
     items: [
       "Power BI (Direct Query / Import)",
+      "Power BI + Databricks Integration",
       "Tableau",
       "RAG (Retrieval-Augmented Generation)",
       "GenAI / LLMs",
